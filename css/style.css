@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+* {
+    font-family: 'Poppins', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000d1a;
+    padding: 10px;
+}
+
+.greetings {
+    font-size: 7.5vw; /* Ajuste a tamaño de viewport */
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Poppins', cursive;
+}
+
+.greetings > span {
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        color: #fff;
+        text-shadow: 0 0 12px #5d00ff, 0 0 50px #e5ff00, 0 0 100px #5d00ff;
+    }
+    10%, 90% {
+        color: #696565;
+        text-shadow: none;
+    }
+}
+
+.greetings > span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.greetings > span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.greetings > span:nth-child(4) {
+    animation-delay: .6s;
+}
+
+.greetings > span:nth-child(5) {
+    animation-delay: .8s;
+}
+
+.description {
+    padding : 40px;
+    font-size: 4vw; /* Ajuste a tamaño de viewport */
+    margin-bottom: 3vh;
+    color: #fbff00;
+    text-align: center;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 3vw; /* Ajuste a tamaño de viewport */
+    color: #111;
+}
+
+/* Estilo para el botón */
+.button button {
+    background-color: yellow;
+    border: none;
+    padding: 2vh 4vw; /* Ajuste a tamaño de viewport */
+    font-size: 4vw; /* Ajuste a tamaño de viewport */
+    cursor: pointer;
+    position: relative;
+    border-radius: 2vh;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button button:hover {
+    background-color: orange;
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+}
+
+/* Adaptación para pantallas pequeñas de hasta 400px */
+@media screen and (max-width: 350px) {
+    .greetings {
+        font-size: 6vw;
+        word-spacing: 12px;
+    }
+
+    .description {
+        font-size: 4.5vw;
+        margin-bottom: 2vh;
+    }
+
+    .button button {
+        padding: 1.5vh 3vw;
+        font-size: 4vw;
+        border-radius: 1.5vh;
+    }
+
+    .button a {
+        font-size: 3vw;
+        background-color: #5d00ff;
+    }
+}

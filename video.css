@@ -1,0 +1,19 @@
+.body{
+    background-color: #000d1a;
+}
+.contenedor-video {
+    display: flex;
+    justify-content: center; /* Centra el video horizontalmente */
+    align-items: center; /* Centra el video verticalmente */
+    height: 100vh; /* Altura del contenedor (ajústalo según lo que necesites) */
+    background-color: #000d1a; /* Color de fondo opcional */
+}
+
+.video {
+    width: 85%; /* Ajusta el ancho del video (puedes usar %, px, vw) */
+    max-width: 1000px; /* Tamaño máximo opcional */
+    height: auto; /* Mantiene la proporción del video */
+}
+.h1{
+    color: rgb(230, 208, 250);
+}
